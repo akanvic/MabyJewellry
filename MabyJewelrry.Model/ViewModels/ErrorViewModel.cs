@@ -1,6 +1,6 @@
 using System;
 
-namespace MabyJewelrry.Models
+namespace MabyJewelrry.Model.ViewModels
 {
     public class ErrorViewModel
     {

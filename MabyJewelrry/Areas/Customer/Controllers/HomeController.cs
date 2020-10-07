@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using MabyJewelrry.Model.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using MabyJewelrry.Models;
 
-namespace MabyJewelrry.Controllers
+namespace MabyJewelrry.Areas.Customer.Controllers
 {
     public class HomeController : Controller
     {
