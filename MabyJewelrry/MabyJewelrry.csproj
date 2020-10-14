@@ -29,4 +29,9 @@
     <ProjectReference Include="..\MabyJewelrry.Utility\MabyJewelrry.Utility.csproj" />
   </ItemGroup>
 
+
+  <ItemGroup>
+    <Folder Include="wwwroot\images\products\" />
+  </ItemGroup>
+
 </Project>
