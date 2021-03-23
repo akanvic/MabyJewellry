@@ -29,6 +29,13 @@ namespace MabyJewelrry.Areas.Customer.Controllers
             return View(products);
         }
 
+        public IActionResult Details(int id)
+        {
+            var product = _unitOfWork.Product.GetFirstOrDefault(c => c.Id == id, includeProperties: "Category");
+
+            return View(product);
+        }
+
         public IActionResult Privacy()
         {
             return View();

@@ -23,6 +23,10 @@ namespace MabyJewelrry.Model
         [Required]
         [Range(1, 100000)]
         public double Price { get; set; }
+
+        [Required]
+        [Range(1, 100000)]
+        public double SlashedPrice { get; set; }
         public string Description { get; set; }
     }
 }

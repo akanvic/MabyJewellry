@@ -4,11 +4,14 @@ using System.Linq;
 using System.Threading.Tasks;
 using MabyJewelrry.DataAccess.Repository.IRepository;
 using MabyJewelrry.Model;
+using MabyJewelrry.Utility;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MabyJewelrry.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = SD.Role_Admin)]
     public class CategoryController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
